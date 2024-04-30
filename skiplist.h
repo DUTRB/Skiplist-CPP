@@ -1,10 +1,11 @@
-/* ************************************************************************
-> File Name:     skiplist.h
-> Author:        程序员Carl
-> 微信公众号:    代码随想录
-> Created Time:  Sun Dec  2 19:04:26 2018
-> Description:   
- ************************************************************************/
+/*
+ * @Author: rubo
+ * @Date: 2024-04-30 15:25:11
+ * @LastEditors: HUAWEI-Ubuntu ruluy0205@163.com
+ * @LastEditTime: 2024-04-30 15:45:03
+ * @FilePath: /Skiplist-CPP/skiplist.h
+ * @Description: 
+ */
 
 #include <iostream> 
 #include <cstdlib>
@@ -37,6 +38,7 @@ public:
     void set_value(V);
     
     // Linear array to hold pointers to next node of different level
+    //存放不同层中下一个节点的指针的线性表
     Node<K, V> **forward;
 
     int node_level;
@@ -78,10 +80,11 @@ void Node<K, V>::set_value(V value) {
     this->value=value;
 };
 
+/* ---------------------------------- 跳表类定义 --------------------------------- */
+
 // Class template for Skip list
 template <typename K, typename V> 
 class SkipList {
-
 public: 
     SkipList(int);
     ~SkipList();

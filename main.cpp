@@ -1,10 +1,12 @@
-/* ************************************************************************
-> File Name:     main.cpp
-> Author:        程序员Carl
-> 微信公众号:    代码随想录
-> Created Time:  Sun Dec  2 20:21:41 2018
-> Description:   
- ************************************************************************/
+/*
+ * @Author: rubo
+ * @Date: 2024-04-30 15:25:11
+ * @LastEditors: HUAWEI-Ubuntu ruluy0205@163.com
+ * @LastEditTime: 2024-04-30 15:26:42
+ * @FilePath: /Skiplist-CPP/main.cpp
+ * @Description: 
+ */
+
 #include <iostream>
 #include "skiplist.h"
 #define FILE_PATH "./store/dumpFile"
